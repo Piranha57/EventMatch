@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - EventMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">●</span>
+                <span class="logo-text">Event<strong>Match</strong></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="calendar.html" class="nav-link">Festival Calendar</a></li>
+                <li><a href="buddy.html" class="nav-link">Find Buddy</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="register.html" class="btn-register active">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Register Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Join EventMatch!</h1>
+                    <p>Create an account to explore and connect at local events</p>
+                </div>
+
+                <form id="registerForm" class="auth-form" onsubmit="handleRegister(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="firstName" 
+                                placeholder="First name" 
+                                required
+                                class="form-input"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="lastName" 
+                                placeholder="Last name" 
+                                required
+                                class="form-input"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regEmail">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="regEmail" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="Enter your phone number" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">City/Location</label>
+                        <input 
+                            type="text" 
+                            id="location" 
+                            name="location" 
+                            placeholder="Enter your city" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <input 
+                            type="password" 
+                            id="regPassword" 
+                            name="password" 
+                            placeholder="Create a password" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            name="confirmPassword" 
+                            placeholder="Confirm your password" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <label class="agree-terms">
+                        <input type="checkbox" name="agree" required>
+                        I agree to the Terms of Service and Privacy Policy
+                    </label>
+
+                    <button type="submit" class="btn-submit">Create Account</button>
+                </form>
+
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="btn-social google">
+                        <span class="social-icon">G</span>
+                        Sign up with Google
+                    </button>
+                    <button class="btn-social facebook">
+                        <span class="social-icon">f</span>
+                        Sign up with Facebook
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html" class="auth-link">Login</a></p>
+                </div>
+            </div>
+
+            <div class="auth-image">
+                <div class="auth-image-content">
+                    <h2>Start Your Journey</h2>
+                    <p>Join thousands of people discovering local events and making new friends</p>
+                    <ul class="auth-features">
+                        <li>✓ Personalized event recommendations</li>
+                        <li>✓ Connect with like-minded people</li>
+                        <li>✓ Save your favorite events</li>
+                        <li>✓ Get notified about new events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EventMatch. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

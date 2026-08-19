@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Side Panel (Fixed) -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventMatch | Calendar</title>
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">📍</div>
+          <div>
+            <h1>EventMatch</h1>
+            <p>Planner</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="dashboard.html" class="nav-item">Home</a>
+          <a href="events.html" class="nav-item">Events</a>
+          <a href="calendar.html" class="nav-item active">Calendar</a>
+          <a href="buddy.html" class="nav-item">Find Buddy</a>
+          <a href="livestream.html" class="nav-item">Live Stream</a>
+          <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Schedule</p>
+            <h2>Event calendar</h2>
+          </div>
+          <button class="btn ghost">Month view</button>
+        </header>
+
+        <section class="calendar-panel">
+          <div class="calendar-header">
+            <button class="calendar-arrow">‹</button>
+            <h3>September 2026</h3>
+            <button class="calendar-arrow">›</button>
+          </div>
+
+          <div class="calendar-grid">
+            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+
+            <button class="day muted">30</button>
+            <button class="day muted">31</button>
+            <button class="day">1</button>
+            <button class="day">2</button>
+            <button class="day">3</button>
+            <button class="day active">4</button>
+            <button class="day">5</button>
+
+            <button class="day">6</button>
+            <button class="day">7</button>
+            <button class="day">8</button>
+            <button class="day">9</button>
+            <button class="day">10</button>
+            <button class="day">11</button>
+            <button class="day">12</button>
+
+            <button class="day">13</button>
+            <button class="day">14</button>
+            <button class="day">15</button>
+            <button class="day">16</button>
+            <button class="day">17</button>
+            <button class="day">18</button>
+            <button class="day">19</button>
+
+            <button class="day">20</button>
+            <button class="day">21</button>
+            <button class="day">22</button>
+            <button class="day">23</button>
+            <button class="day">24</button>
+            <button class="day">25</button>
+            <button class="day">26</button>
+
+            <button class="day">27</button>
+            <button class="day">28</button>
+            <button class="day">29</button>
+            <button class="day">30</button>
+            <button class="day muted">1</button>
+            <button class="day muted">2</button>
+            <button class="day muted">3</button>
+          </div>
+        </section>
+
+        <section class="upcoming-list">
+          <div class="list-card">
+            <div class="date-box">
+              <span>Sep</span>
+              <strong>04</strong>
+            </div>
+            <div class="event-copy">
+              <h4>Krishna Janmashtami</h4>
+              <p>Community celebration at Temple Square</p>
+            </div>
+          </div>
+
+          <div class="list-card">
+            <div class="date-box alt">
+              <span>Sep</span>
+              <strong>14</strong>
+            </div>
+            <div class="event-copy">
+              <h4>Ganesh Utsav Mela</h4>
+              <p>Local fair and cultural parade</p>
+            </div>
+          </div>
+
+          <div class="list-card">
+            <div class="date-box">
+              <span>Sep</span>
+              <strong>20</strong>
+            </div>
+            <div class="event-copy">
+              <h4>Mata Ki Chowki Night</h4>
+              <p>Spiritual gathering and music night</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>

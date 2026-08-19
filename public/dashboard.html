@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventMatch Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">📍</div>
+          <div>
+            <h1>EventMatch</h1>
+            <p>Community events</p>
+          </div>
+        </div>
+
+         <nav class="nav">
+          <a href="dashboard.html" class="nav-item">Home</a>
+          <a href="events.html" class="nav-item">Events</a>
+          <a href="calendar.html" class="nav-item active">Calendar</a>
+          <a href="buddy.html" class="nav-item">Find Buddy</a>
+          <a href="livestream.html" class="nav-item">Live Stream</a>
+          <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        
+
+        <div class="side-card promo-card">
+          <p class="label">Community</p>
+          <h3>Weekend meet-up</h3>
+          <p>Meet 18 people nearby for a city fair walk.</p>
+          <button>View event</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar" id="home">
+          <div class="search-box">
+            <span>🔎</span>
+            <input type="text" placeholder="Search events, food, music..." />
+          </div>
+
+          <div class="top-actions">
+            <button class="btn ghost">Today</button>
+            <a href="login.html" class="link-btn">Login</a>
+            <a href="register.html" class="btn primary">Register</a>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="hero-tag">Your city, your vibes</span>
+            <h2>Discover events and make new friends.</h2>
+            <p>
+              Find cultural fairs, food gatherings, live music, social meetups, and
+              community events tailored to your neighborhood.
+            </p>
+            <div class="hero-meta">
+              <span>📍 Jaipur, Rajasthan</span>
+              <span>🎯 12 nearby events</span>
+            </div>
+          </div>
+
+          <div class="hero-summary">
+            <div class="summary-badge">+18% this week</div>
+            <div class="mini-card">
+              <strong>4.8/5</strong>
+              <span>Community rating</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-grid" id="events">
+          <div class="main-column">
+            <div class="section-header">
+              <div>
+                <p class="eyebrow">Featured events</p>
+                <h3>Upcoming events</h3>
+              </div>
+              <button class="btn ghost">See all</button>
+            </div>
+            <section>
+            <article class="event-card">
+              <img src="https://wallpapercave.com/wp/wp4475444.jpg" alt="Ganesh Utsav Mela" class="event-image">
+              <div class="event-details">
+                <div class="event-row">
+                  <span class="badge success">Popular</span>
+                  <span class="comments">💬 24 comments</span>
+                </div>
+                <h4>Ganesh Utsav Mela</h4>
+                <ul>
+                  <li><strong>Date:</strong> Saturday, 14 Sep</li>
+                  <li><strong>Time:</strong> 6:00 PM - 10:00 PM</li>
+                  <li><strong>Location:</strong> Central Park, Jaipur</li>
+                  <li><strong>Distance:</strong> 2.1 km away</li>
+                </ul>
+                <div class="event-actions">
+                  <button class="btn primary">Interested</button>
+                  <button class="btn secondary">Add photo</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <img src="https://th.bing.com/th/id/OIP.ie1j1L57vCpKMNFTflRuSgAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bhandara at Hanuman Temple" class="event-image">
+              <div class="event-details">
+                <div class="event-row">
+                  <span class="badge">Free</span>
+                  <span class="comments">💬 12 comments</span>
+                </div>
+                <h4>Bhandara at Hanuman Temple</h4>
+                <ul>
+                  <li><strong>Date:</strong> Saturday, 19 Sep</li>
+                  <li><strong>Time:</strong> 8:30 AM - 12:00 PM</li>
+                  <li><strong>Location:</strong> Temple Road, Malviya Nagar</li>
+                  <li><strong>Distance:</strong> 3.5 km away</li>
+                </ul>
+                <div class="event-actions">
+                  <button class="btn primary">Going</button>
+                  <button class="btn secondary">Add photo</button>
+                </div>
+              </div>
+            </article>
+            </section>
+          </div>
+
+          <aside class="side-column">
+            <div class="info-panel">
+              <p class="eyebrow">Dashboard</p>
+              <h3>Quick summary</h3>
+              <div class="summary-row"><span>Events joined</span><strong>08</strong></div>
+              <div class="summary-row"><span>Buddy matches</span><strong>15</strong></div>
+              <div class="summary-row"><span>Saved places</span><strong>06</strong></div>
+            </div>
+
+            <div class="info-panel">
+              <p class="eyebrow">Trending</p>
+              <h3>Popular this week</h3>
+              <ul class="trend-list">
+                <li>🎶 Night market jam</li>
+                <li>🍲 Street food tour</li>
+                <li>🙏 Cultural kirtan</li>
+              </ul>
+            </div>
+
+            <section class="buddy-sponsors-section">
+            <div class="sponsors-box">
+                <h2>Local Sponsors</h2>
+                <div class="sponsor-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=150&h=150&fit=crop" alt="Sponsor" class="sponsor-image">
+                    <div class="sponsor-info">
+                        
+                        <h2>Satyam</h2>
+                        <p>Veg Bakery</p>
+                        <h3>Rating: 4.7/5</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+          </aside>
+
+
+        <section class="panel-block" id="calendar">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Planner</p>
+              <h3>Event calendar</h3>
+            </div>
+            <button class="btn ghost">Month view</button>
+          </div>
+
+          <div class="calendar-box">
+            <div class="calendar-header">
+              <button class="calendar-arrow">‹</button>
+              <h4>September 2026</h4>
+              <button class="calendar-arrow">›</button>
+            </div>
+
+            <div class="calendar-grid">
+              <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+
+              1</button>
+              <button class="day">12</button>
+
+              <button class="day">13</button>
+              <button class="day">14</button>
+              <button class="day">15</button>
+              <button class="day">16</button>
+              <button class="day">17</button>
+              <button class="day">18</button>
+              <button class="day">19</button>
+
+              <button class="day">20</button>
+              <button class="day">21</button>
+              <button class="day">22</button>
+              <button class="day">23</button>
+              <button class="day">24</button>
+              <button class="day">25</button>
+              <button class="day">26</button>
+
+              <button class="day">27</button>
+              <button class="day">28</button>
+              <button class="day">29</button>
+              <button class="day">30</button>
+              <button class="day muted">1</button>
+              <button class="day muted">2</button>
+              <button class="day muted">3</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-block" id="buddy">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Find buddy</p>
+              <h3>Meet local people</h3>
+            </div>
+            <button class="btn ghost">Create group</button>
+          </div>
+
+          <div class="buddy-layout">
+            <div class="buddy-list">
+              <div class="buddy-card">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Priya" />
+                <div class="buddy-info">
+                  <h4>Priya S.</h4>
+                  <p>Near Vaishali Nagar</p>
+                  <span>Interested in food fairs</span>
+                </div>
+                <div class="buddy-actions">
+                  <button class="btn primary small">Message</button>
+                  <button class="btn secondary small">Block</button>
+                </div>
+              </div>
+
+              <div class="buddy-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Rohit" />
+                <div class="buddy-info">
+                  <h4>Rohit K.</h4>
+                  <p>Close to Sanganer</p>
+                  <span>Available for group meetups</span>
+                </div>
+                <div class="buddy-actions">
+                  <button class="btn primary small">Message</button>
+                  <button class="btn secondary small">Block</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-box">
+              <div class="chat-header">
+                <div>
+                  <p class="label">Current buddy</p>
+                  <h4>Group: City Walk</h4>
+                </div>
+                <span class="online">● Online</span>
+              </div>
+
+              <div class="messages">
+                <div class="message incoming">Hey, are you joining the weekend fair walk?</div>
+                <div class="message outgoing">Yes! I’m bringing my camera and snacks.</div>
+                <div class="message incoming">Perfect. We can meet at 5:30 PM near the main gate.</div>
+              </div>
+
+              <div class="chat-input">
+                <input type="text" placeholder="Type a message..." />
+                <button class="btn primary small">Send</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-block" id="live">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Live stream</p>
+              <h3>Watch the event live</h3>
+            </div>
+            <button class="btn ghost">Join live</button>
+          </div>
+
+          <div class="stream-grid">
+            <div class="stream-card featured-stream">
+              <div class="stream-overlay">
+                <span class="live-pill">● LIVE</span>
+                <strong>45.8k watching</strong>
+              </div>
+              <div class="stream-caption">
+                <h4>Heritage Street Festival</h4>
+                <p>Live from Amber Road, Jaipur</p>
+              </div>
+            </div>
+
+            <div class="stream-card side-stream stream-one">
+              <span class="live-pill">● LIVE</span>
+              <h4>Food Crawl</h4>
+            </div>
+
+            <div class="stream-card side-stream stream-two">
+              <span class="live-pill">● LIVE</span>
+              <h4>Dance Night</h4>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-block" id="profile">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Profile</p>
+              <h3>User profile</h3>
+            </div>
+            <button class="btn ghost">Edit profile</button>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-main">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="User profile" />
+              <div>
+                <h4>Aditi Sharma</h4>
+                <p>@aditisharma</p>
+                <span>Jaipur, Rajasthan</span>
+              </div>
+            </div>
+
+            <div class="profile-stats">
+              <div>
+                <strong>187</strong>
+                <span>Friends</span>
+              </div>
+              <div>
+                <strong>32</strong>
+                <span>Events</span>
+              </div>
+              <div>
+                <strong>4.9</strong>
+                <span>Rating</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventMatch Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">📍</div>
+          <div>
+            <h1>EventMatch</h1>
+            <p>Community events</p>
+          </div>
+        </div>
+
+         <nav class="nav">
+          <a href="dashboard.html" class="nav-item">Home</a>
+          <a href="events.html" class="nav-item">Events</a>
+          <a href="calendar.html" class="nav-item active">Calendar</a>
+          <a href="buddy.html" class="nav-item">Find Buddy</a>
+          <a href="livestream.html" class="nav-item">Live Stream</a>
+          <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        
+
+        <div class="side-card promo-card">
+          <p class="label">Community</p>
+          <h3>Weekend meet-up</h3>
+          <p>Meet 18 people nearby for a city fair walk.</p>
+          <button>View event</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar" id="home">
+          <div class="search-box">
+            <span>🔎</span>
+            <input type="text" placeholder="Search events, food, music..." />
+          </div>
+
+          <div class="top-actions">
+            <button class="btn ghost">Today</button>
+            <a href="login.html" class="link-btn">Login</a>
+            <a href="register.html" class="btn primary">Register</a>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="hero-tag">Your city, your vibes</span>
+            <h2>Discover events and make new friends.</h2>
+            <p>
+              Find cultural fairs, food gatherings, live music, social meetups, and
+              community events tailored to your neighborhood.
+            </p>
+            <div class="hero-meta">
+              <span>📍 Jaipur, Rajasthan</span>
+              <span>🎯 12 nearby events</span>
+            </div>
+          </div>
+
+          <div class="hero-summary">
+            <div class="summary-badge">+18% this week</div>
+            <div class="mini-card">
+              <strong>4.8/5</strong>
+              <span>Community rating</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-grid" id="events">
+          <div class="main-column">
+            <div class="section-header">
+              <div>
+                <p class="eyebrow">Featured events</p>
+                <h3>Upcoming events</h3>
+              </div>
+              <button class="btn ghost">See all</button>
+            </div>
+
+            <section>
+            <article class="event-card">
+              <img src="https://wallpapercave.com/wp/wp4475444.jpg" alt="Ganesh Utsav Mela" class="event-image">
+              <div class="event-details">
+                <div class="event-row">
+                  <span class="badge success">Popular</span>
+                  <span class="comments">💬 24 comments</span>
+                </div>
+                <h4>Ganesh Utsav Mela</h4>
+                <ul>
+                  <li><strong>Date:</strong> Saturday, 14 Sep</li>
+                  <li><strong>Time:</strong> 6:00 PM - 10:00 PM</li>
+                  <li><strong>Location:</strong> Central Park, Jaipur</li>
+                  <li><strong>Distance:</strong> 2.1 km away</li>
+                </ul>
+                <div class="event-actions">
+                  <button class="btn primary">Interested</button>
+                  <button class="btn secondary">Add photo</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <img src="https://th.bing.com/th/id/OIP.ie1j1L57vCpKMNFTflRuSgAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bhandara at Hanuman Temple" class="event-image">
+              <div class="event-details">
+                <div class="event-row">
+                  <span class="badge">Free</span>
+                  <span class="comments">💬 12 comments</span>
+                </div>
+                <h4>Bhandara at Hanuman Temple</h4>
+                <ul>
+                  <li><strong>Date:</strong> Saturday, 19 Sep</li>
+                  <li><strong>Time:</strong> 8:30 AM - 12:00 PM</li>
+                  <li><strong>Location:</strong> Temple Road, Malviya Nagar</li>
+                  <li><strong>Distance:</strong> 3.5 km away</li>
+                </ul>
+                <div class="event-actions">
+                  <button class="btn primary">Going</button>
+                  <button class="btn secondary">Add photo</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <img src="https://media.istockphoto.com/id/1290257843/photo/durga-puja-kolkata-west-bengal-india.jpg?s=170667a&w=0&k=20&c=PxGwnn9a4D0XVr-W7ElwsHwiWqV9t0LBa0jjSkPx74I=" alt="Mata Ki Chowki Night" class="event-image">
+              <div class="event-details">
+                <div class="event-row">
+                  <span class="badge success">Popular</span>
+                  <span class="comments">💬 24 comments</span>
+                </div>
+                <h4>Mata Ki Chowki Night</h4>
+                <ul>
+                  <li><strong>Date:</strong> Tuesday, 22 Sep</li>
+                  <li><strong>Time:</strong> 6:00 PM - 10:00 PM</li>
+                  <li><strong>Location:</strong> Central Park, Jaipur</li>
+                  <li><strong>Distance:</strong> 2.1 km away</li>
+                </ul>
+                <div class="event-actions">
+                  <button class="btn primary">Interested</button>
+                  <button class="btn secondary">Add photo</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <img src="https://live-production.wcms.abc-cdn.net.au/151a63cea2d09bfff3ed9c27ee07018d?impolicy=wcms_crop_resize&cropH=1205&cropW=1814&xPos=87&yPos=152&width=862&height=575" alt="Food Festival" class="event-image">
+              <div class="event-details">
+                <div class="event-row">
+                  <span class="badge success">Popular</span>
+                  <span class="comments">💬 24 comments</span>
+                </div>
+                <h4>Food Festival</h4>
+                <ul>
+                  <li><strong>Date:</strong> Sunday, 27 Sep</li>
+                  <li><strong>Time:</strong> 6:00 PM - 10:00 PM</li>
+                  <li><strong>Location:</strong> Central Park, Jaipur</li>
+                  <li><strong>Distance:</strong> 2.1 km away</li>
+                </ul>
+                <div class="event-actions">
+                  <button class="btn primary">Interested</button>
+                  <button class="btn secondary">Add photo</button>
+                </div>
+              </div>
+            </article>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

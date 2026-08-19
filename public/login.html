@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EventMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">●</span>
+                <span class="logo-text">Event<strong>Match</strong></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="calendar.html" class="nav-link">Festival Calendar</a></li>
+                <li><a href="buddy.html" class="nav-link">Find Buddy</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="login.html" class="btn-login active">Login</a>
+                <a href="register.html" class="btn-register">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Welcome Back!</h1>
+                    <p>Login to EventMatch to discover amazing events</p>
+                </div>
+
+                <form id="loginForm" class="auth-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Enter your password" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            Remember me
+                        </label>
+                        <a href="#forgot" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Login</button>
+                </form>
+
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="btn-social google">
+                        <span class="social-icon">G</span>
+                        Login with Google
+                    </button>
+                    <button class="btn-social facebook">
+                        <span class="social-icon">f</span>
+                        Login with Facebook
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="register.html" class="auth-link">Sign Up</a></p>
+                </div>
+            </div>
+
+            <div class="auth-image">
+                <div class="auth-image-content">
+                    <h2>Discover Amazing Events</h2>
+                    <p>Find and connect with people at local events, festivals, and celebrations</p>
+                    <ul class="auth-features">
+                        <li>✓ Find events near you</li>
+                        <li>✓ Connect with event buddies</li>
+                        <li>✓ Never miss a festival</li>
+                        <li>✓ Create and manage events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EventMatch. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

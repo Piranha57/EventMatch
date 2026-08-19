@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Side Panel (Fixed) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventMatch | Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">📍</div>
+          <div>
+            <h1>EventMatch</h1>
+            <p>User profile</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="dashboard.html" class="nav-item">Home</a>
+          <a href="events.html" class="nav-item">Events</a>
+          <a href="calendar.html" class="nav-item">Calendar</a>
+          <a href="buddy.html" class="nav-item">Find Buddy</a>
+          <a href="livestream.html" class="nav-item">Live Stream</a>
+          <a href="profile.html" class="nav-item active">Profile</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h2>My profile</h2>
+          </div>
+          <button class="btn ghost">Edit profile</button>
+        </header>
+
+        <section class="profile-card">
+          <div class="profile-main">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="User" />
+            <div>
+              <h3>Aditi Sharma</h3>
+              <p>@aditisharma</p>
+              <span>Jaipur, Rajasthan</span>
+            </div>
+          </div>
+
+          <div class="details">
+            <div class="detail-item">
+              <strong>187</strong>
+              <span>Friends</span>
+            </div>
+            <div class="detail-item">
+              <strong>32</strong>
+              <span>Events</span>
+            </div>
+            <div class="detail-item">
+              <strong>4.9</strong>
+              <span>Rating</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-grid">
+          <div class="info-panel">
+            <p class="eyebrow">About</p>
+            <h3>Bio</h3>
+            <p>I enjoy cultural events, food trails, and city walks. Looking for friends who like live music and community gatherings.</p>
+          </div>
+
+          <div class="info-panel">
+            <p class="eyebrow">Interests</p>
+            <h3>Favorites</h3>
+            <div class="tags">
+              <span>Food fairs</span>
+              <span>Music</span>
+              <span>Festivals</span>
+              <span>City walks</span>
+            </div>
+          </div>
+        </section>
+
+          <section class="add-events-section">
+            <h2>Create & Manage Events</h2>
+            <button class="btn btn-add-event" onclick="toggleAddEventForm()">+ Add New Event</button>
+          
+            <div id="addEventForm" class="add-event-form" style="display: none;">
+              <div class="form-container">
+                <h3>Create a New Event</h3>
+                <form onsubmit="addEvent(event)">
+                  <div class="form-group">
+                    <label>Event Name *</label>
+                    <input type="text" id="eventName" placeholder="Enter event name" required>
+                  </div>
+                
+                  <div class="form-group">
+                    <label>Description *</label>
+                    <textarea id="eventDesc" placeholder="Describe your event" required></textarea>
+                  </div>
+                
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label>Date *</label>
+                      <input type="date" id="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Time *</label>
+                      <input type="time" id="eventTime" required>
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                    <label>Location *</label>
+                    <input type="text" id="eventLocation" placeholder="Enter event location" required>
+                  </div>
+                
+                  <div class="form-group">
+                    <label>Category</label>
+                    <select id="eventCategory">
+                      <option value="religious">Religious</option>
+                      <option value="food">Food & Fairs</option>
+                      <option value="music">Music & Dance</option>
+                      <option value="cultural">Cultural</option>
+                      <option value="sports">Sports</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                
+                  <div class="form-actions">
+                    <button type="submit" class="btn primary">Create Event</button>
+                    <button type="button" class="btn secondary" onclick="toggleAddEventForm()">Cancel</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          
+            <div id="createdEventsList" class="created-events-list">
+              <h3>Your Events</h3>
+              <div id="eventsContainer" class="events-container">
+                <p>No events created yet</p>
+              </div>
+            </div>
+          </section>
+      </main>
+    </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>

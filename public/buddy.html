@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Side Panel (Fixed) -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventMatch | Find Buddy</title>
+    <link rel="stylesheet" href="buddy.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">📍</div>
+          <div>
+            <h1>EventMatch</h1>
+            <p>Buddy network</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="dashboard.html" class="nav-item">Home</a>
+          <a href="events.html" class="nav-item">Events</a>
+          <a href="calendar.html" class="nav-item">Calendar</a>
+          <a href="buddy.html" class="nav-item active">Find Buddy</a>
+          <a href="livestream.html" class="nav-item">Live Stream</a>
+          <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Meet people</p>
+            <h2>Find a buddy</h2>
+          </div>
+          <button class="btn ghost">Create group</button>
+        </header>
+
+        <section class="buddy-layout">
+          <div class="buddy-list">
+            <div class="buddy-card">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Priya" />
+              <div class="buddy-info">
+                <h3>Priya S.</h3>
+                <p>Near Vaishali Nagar</p>
+                <span>Interested in food fairs</span>
+              </div>
+              <div class="buddy-actions">
+                <button class="btn primary small">Message</button>
+                <button class="btn secondary small">Block</button>
+              </div>
+            </div>
+
+            <div class="buddy-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Rohit" />
+              <div class="buddy-info">
+                <h3>Rohit K.</h3>
+                <p>Close to Sanganer</p>
+                <span>Available for group meetups</span>
+              </div>
+              <div class="buddy-actions">
+                <button class="btn primary small">Message</button>
+                <button class="btn secondary small">Block</button>
+              </div>
+            </div>
+
+            <div class="buddy-card">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=300&q=80" alt="Ananya" />
+              <div class="buddy-info">
+                <h3>Ananya M.</h3>
+                <p>Downtown Jaipur</p>
+                <span>Group event partner</span>
+              </div>
+              <div class="buddy-actions">
+                <button class="btn primary small">Message</button>
+                <button class="btn secondary small">Block</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-panel">
+            <div class="chat-header">
+              <div>
+                <p class="label">Current buddy</p>
+                <h3>Group: City Walk</h3>
+              </div>
+              <span class="online">● Online</span>
+            </div>
+
+            <div class="messages">
+              <div class="message incoming">Hey, are you joining the weekend fair walk?</div>
+              <div class="message outgoing">Yes! I’m bringing my camera and snacks.</div>
+              <div class="message incoming">Perfect. We can meet at 5:30 PM near the main gate.</div>
+            </div>
+
+            <div class="chat-input">
+              <input type="text" placeholder="Type a message..." />
+              <button class="btn primary small">Send</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>

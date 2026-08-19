@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventMatch Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="theme-toggle" />
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">📍</div>
+          <div>
+            <h1>EventMatch</h1>
+            <p>Community events</p>
+          </div>
+        </div>
+
+         <nav class="nav">
+          <a href="dashboard.html" class="nav-item">Home</a>
+          <a href="events.html" class="nav-item">Events</a>
+          <a href="calendar.html" class="nav-item active">Calendar</a>
+          <a href="buddy.html" class="nav-item">Find Buddy</a>
+          <a href="livestream.html" class="nav-item">Live Stream</a>
+          <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar" id="home">
+          <div class="search-box">
+            <span>🔎</span>
+            <input type="text" placeholder="Search events, food, music..." />
+          </div>
+
+          <div class="top-actions">
+            <button class="btn ghost">Today</button>
+            <a href="login.html" class="link-btn">Login</a>
+            <a href="register.html" class="btn primary">Register</a>
+          </div>
+        </header>
+
+        <section class="panel-block" id="live">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Live stream</p>
+              <h3>Watch the event live</h3>
+            </div>
+            <button class="btn ghost">Join live</button>
+          </div>
+
+          <div class="stream-grid">
+            <div class="stream-card featured-stream">
+              <div class="stream-overlay">
+                <span class="live-pill">● LIVE</span>
+                <strong>45.8k watching</strong>
+              </div>
+              <div class="stream-caption">
+                <h4>Heritage Street Festival</h4>
+                <p>Live from Amber Road, Jaipur</p>
+              </div>
+            </div>
+
+            <div class="stream-card side-stream stream-one">
+              <span class="live-pill">● LIVE</span>
+              <h4>Food Crawl</h4>
+            </div>
+
+            <div class="stream-card side-stream stream-two">
+              <span class="live-pill">● LIVE</span>
+              <h4>Dance Night</h4>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
